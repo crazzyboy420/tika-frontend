@@ -41,7 +41,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // Using package name
+    '@nuxtjs/axios',
   ],
+
+  axios: {
+    baseURL: 'http://tika.test/api', // Used as fallback if no runtime config is provided
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
